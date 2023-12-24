@@ -1,0 +1,117 @@
+.testimonial-container{
+  background-color: var(--primary-color);
+  width:calc(100vw + 0px);
+margin-top: 2rem;
+position: relative;
+box-sizing: border-box;
+
+height:500px;
+/* border: 2px solid white; */
+
+margin-bottom: 5rem;
+/* overflow: hidden; */
+
+
+
+ 
+
+}
+
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+  width:80vw;
+  z-index: 2;
+}
+
+.testimonial-container  .carousel-control-prev,
+.testimonial-container .carousel-control-next {
+  /* Decrease the hit box of the arrow buttons */
+  padding: 1px;
+ 
+  height:min-content;
+  position: absolute;
+  top:50%;
+
+  z-index: 2;
+
+}
+
+
+
+
+
+.carousel{
+  width:90vw;
+  max-width: 760px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.testimonial-box{
+  position: relative;
+  padding: 0;
+  height:150px;
+  /* width:100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -3rem;
+
+  z-index: 0;
+
+}
+
+.testimonial-box h2{
+  position: absolute;
+}
+
+.testimonial-box p{
+  position:absolute;
+  bottom: -5px;
+  
+  
+}
+
+.testimonial-intro{
+  margin-left:auto;
+  margin-right: auto;
+  width:80vw;
+  text-align: center;
+}
+
+.testimonial-intro .description-text{
+  /* margin:0; */
+
+  text-align: center;
+}
+
+
+@media screen and (min-width:865px) {
+  .testimonial-text-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width:90vw;
+
+  }
+
+  .testimonial-box{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+
+  }
+
+
+}
+
+
+  
+
+
+  

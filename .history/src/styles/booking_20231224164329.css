@@ -1,0 +1,8 @@
+.booking-container{
+    width:100vw;
+    background-color: var(--primary-color);
+}
+
+.booking-container .calendly-badge-widget{
+    position: relative;
+}
