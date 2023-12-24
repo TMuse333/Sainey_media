@@ -1,0 +1,12 @@
+.content-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+    padding-top: 3px;
+}
+
+
+.image-text-box{
+    display: flex;
+}
+

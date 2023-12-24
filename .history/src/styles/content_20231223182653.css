@@ -1,0 +1,7 @@
+.content-container{
+    width:10vw;
+    position: relative;
+    background-color: var(--primary-color);
+    padding-top: 3px;
+}
+

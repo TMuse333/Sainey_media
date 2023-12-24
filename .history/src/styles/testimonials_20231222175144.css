@@ -1,0 +1,60 @@
+.testimonial-container{
+  background-color: rgb(4, 4, 29);
+  width:100vw;
+position: absolute;
+left:0;
+overflow-x: hidden;
+
+ 
+
+}
+
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+  width:80vw;
+}
+
+.testimonial-container  .carousel-control-prev,
+.testimonial-container .carousel-control-next {
+  /* Decrease the hit box of the arrow buttons */
+  padding: 1px;
+ 
+  height:min-content;
+  position: absolute;
+  top:50%;
+  
+  /* height:120px;
+
+  position:absolute;
+  top:50px; */
+}
+
+.react-player {
+  /* Increase the z-index of the play button */
+  z-index: 1;
+}
+
+.testimonial-box{
+  position: relative;
+  height:150px;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonial-box p{
+  /* position:absolute;
+  bottom: 0px; */
+  
+  
+}
+
+
+
+  
+
+
+  

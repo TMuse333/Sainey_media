@@ -1,0 +1,36 @@
+.testimonial-container{
+  background-color: rgb(4, 4, 29);
+  width:100vw;
+position: absolute;
+left:0
+
+ 
+
+}
+
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+  width:30vw;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  /* Decrease the hit box of the arrow buttons */
+  padding: 1px;
+  color:red;
+  z-index: -1;
+  height:1px
+}
+
+.react-player {
+  /* Increase the z-index of the play button */
+  z-index: 1;
+}
+
+
+
+  
+
+
+  

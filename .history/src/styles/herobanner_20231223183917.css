@@ -1,0 +1,30 @@
+.hero-container{
+    background-color: var(--primary-color);
+    width:100vw;
+ margin-bottom: 2rem;
+    padding-top: 30px;
+   
+    
+}
+
+.hero-logo{
+    height:300px;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo p{
+    align-items: center;
+    font-size: 30px;
+    color:white;
+}
+
+
+@media screen and (min-width:865px){
+    .hero-logo {
+        max-width: 800px;
+    }
+}

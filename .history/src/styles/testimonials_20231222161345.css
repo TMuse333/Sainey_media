@@ -1,0 +1,15 @@
+.testimonial-container {
+    width: 50vw;
+    margin: 0 auto;
+    
+  }
+  
+  .slick-slide {
+    max-width: 100%; /* Adjust the maximum width for individual slides as needed */
+    margin: 0 auto; 
+  }
+  
+  .slick-list {
+    overflow: hidden; /* Hide the overflow to prevent unwanted scrollbar */
+  }
+  

@@ -1,0 +1,13 @@
+.about-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.image-holder{
+    margin
+    color:white;
+    background-color: black;
+    height:100px;
+    width:80vw;
+}

@@ -1,0 +1,19 @@
+.hero-container{
+    background-color: var(--primary-color);
+    width:100vw;
+    position: absolute;
+    top:80px;
+    ;
+    
+}
+
+.hero-logo{
+    height:300px;
+    width:100vw;
+    background-color: black;
+    display: flex;
+}
+
+.hero-logo p{
+    align-items: center;
+}

@@ -1,0 +1,81 @@
+.content-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+    padding-top: 3px;
+}
+
+
+.image-text-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-text{
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+    color:#cfd0d0;
+  }
+  
+  .image-holder{
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    background-color: black;
+    height:100%;
+    object-fit: cover;
+    max-height: 400px;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .content-image{
+    object-fit: cover;
+    width:60vw;
+    max-width: 638px;
+    max-height: 537px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+
+@media screen and (min-width:865px){
+    .image-text-box{
+        margin-left: auto;
+        margin-right: auto;
+               display: grid;
+               width:90vw;
+               /* background-color: #00bfff; */
+              
+               grid-template-columns: 1fr 1fr; 
+       gap:3rem;
+       margin-bottom: 2rem;
+       /* position: relative; */
+       
+  }
+
+  .image-holder{
+
+    max-width: 638px;
+height:50vh;
+    max-height: 537px;
+    
+  }
+
+  .description-box{
+    
+  }
+
+  .description-text{
+   height: 537px;
+   background-color: red;
+   word-wrap: break-word;
+  }
+}
+
+
+
+

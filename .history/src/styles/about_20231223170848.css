@@ -1,0 +1,17 @@
+.about-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.image-holder{
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    background-color: black;
+    height:100px;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
