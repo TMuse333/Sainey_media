@@ -1,0 +1,137 @@
+.content-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+    padding-top: 3px;
+}
+
+
+
+
+.image-text-box{
+    display: flex;
+    
+}
+
+/* .image-text-box .reverse {
+    flex-direction: column-reverse;
+} */
+
+.description-text{
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+    color:#cfd0d0;
+    font-weight: 300;;
+  }
+  
+
+
+  .content-image{
+    object-fit: cover;
+    width:90vw;
+    max-width: 760px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .description-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .description-box button{
+    margin-top: 2rem;
+}
+
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #00bfff; /* Quantum blue color */
+    color: #00bfff;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .button:hover {
+    background-color: #00bfff; /* Quantum blue color on hover */
+    color: #FFF; /* White text on hover */
+  }
+
+
+@media screen and (min-width:865px){
+    .image-text-box{
+        margin-left: auto;
+        margin-right: auto;
+               display: grid;
+               width:90vw;
+               max-width: 900px;
+             
+               /* background-color: #00bfff; */
+              
+               grid-template-columns: 1fr 1fr; 
+       gap:4rem;
+       margin-bottom: 2rem;
+       /* position: relative; */
+       
+  }
+
+
+
+  .content-image{
+    width:48vw;
+    height:58vw;
+    max-height: 537px;
+    max-width: 638px;
+
+  
+  }
+
+
+
+  .description-box{
+    margin-top: 3rem;
+    display: flex;
+  
+    
+  }
+
+  .description-box h2{
+    text-align: left;
+  }
+
+  .description-box p{
+    height: 537px;
+    width:250px;
+    /* background-color: red; */
+  white-space:initial;
+    max-width: 100%;
+    /* overflow: hidden; */
+    /* margin-left: -1rem; */
+    line-height: 1.75rem;
+  }
+
+.description-box h2{
+
+    /* margin-left: -3rem; */
+ 
+}
+
+
+}
+
+
+
+

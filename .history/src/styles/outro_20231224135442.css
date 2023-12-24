@@ -1,0 +1,34 @@
+.outro-container{
+    width: 100vw;
+    background-image: url('../media/image-holder-dark.png');
+    height:90vw;
+ display: flex;
+ align-items: center;
+ background-repeat: no-repeat;
+ background-size: cover; 
+ max-height: 768px;
+
+
+
+/* margin-bottom: 20rem; */
+}
+
+.outro-text-box .title-text {
+    
+    font-size: 2.25rem;
+}
+
+.outro-text-box .description-text{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:655px) {
+    .outro-container{
+        text-align: left;
+      
+    }
+
+    .outro-text-box{
+        margin
+    }
+}

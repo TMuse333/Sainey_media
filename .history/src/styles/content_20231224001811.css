@@ -1,0 +1,137 @@
+.content-container{
+    width:100vw;
+    position: relative;
+    background-color: var(--primary-color);
+    padding-top: 3px;
+}
+
+
+.image-text-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-text{
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+    color:#cfd0d0;
+    font-weight: 300;;
+  }
+  
+  .image-holder{
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    background-color: black;
+    height:100%;
+    object-fit: cover;
+    max-height: 400px;
+    width:90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .content-image{
+    object-fit: cover;
+    width:90vw;
+    max-width: 638px;
+    max-height: 537px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .description-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #00bfff; /* Quantum blue color */
+    color: #00bfff;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .button:hover {
+    background-color: #00bfff; /* Quantum blue color on hover */
+    color: #FFF; /* White text on hover */
+  }
+
+
+@media screen and (min-width:865px){
+    .image-text-box{
+        margin-left: auto;
+        margin-right: auto;
+               display: grid;
+               width:90vw;
+               max-width: 900px;
+             
+               /* background-color: #00bfff; */
+              
+               grid-template-columns: 1fr 1fr; 
+       gap:4rem;
+       margin-bottom: 2rem;
+       /* position: relative; */
+       
+  }
+
+  .content-image{
+    width:60vw;
+  }
+
+  .image-holder{
+
+    max-width: 638px;
+height:50vh;
+    max-height: 537px;
+    
+  }
+
+  .description-box{
+    margin-top: -2rem;
+    display: flex;
+    /* text-align: center;
+    margin-right: auto; */
+    /* margin-left: auto; */
+    
+  }
+
+  .description-box p{
+    height: 537px;
+    width:250px;
+    /* background-color: red; */
+  white-space:initial;
+    max-width: 100%;
+    /* overflow: hidden; */
+    margin-left: -1rem;
+    line-height: 1.75rem;
+  }
+
+.description-box h2{
+
+    margin-left: -3rem;
+ 
+}
+
+
+}
+
+
+
+

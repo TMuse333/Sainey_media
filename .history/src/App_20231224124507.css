@@ -1,0 +1,49 @@
+#root {
+
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+:root{
+  --primary-color:rgb(29, 40, 49);;
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left:0;
+  top:70px;
+  background-color: var(--primary-color);
+
+}
+
+
+.title-text{
+  font-family: 'spartan',sans-serif;
+  color:#cfd0d0;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:865px){
+  .description-text{
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+

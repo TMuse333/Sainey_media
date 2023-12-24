@@ -1,0 +1,9 @@
+.outro-container{
+    width: 100vw;
+    background-image: url('../media/image-holder-dark.png');
+    height:85vw;
+ display: flex;
+ align-items: center;
+
+margin-bottom: 20rem;
+}
