@@ -1,0 +1,143 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+
+:root{
+  /* --primary-color:rgb(5, 23, 111); */
+  --tag-color:rgb(10, 9, 17);
+  --primary-color:rgb(13, 18, 22);
+}
+
+.sphere{
+
+z-index: 0;
+margin-top: -10rem;
+margin-bottom: 15rem;
+height:1px;
+
+
+
+}
+
+.layout{
+  width:100vw;
+  margin-top: -5rem;
+  position: absolute;
+  left:0;
+  top:120px;
+  background-color: var( --primary-color);
+  overflow-x: hidden;
+  padding: 0;
+z-index: 13;
+}
+
+.before-title-text{
+ font-weight: bold;
+ margin-bottom: -0.5rem;
+}
+
+.bold-700{
+  font-weight: 700;
+}
+
+.title-text{
+  /* width:100vw; */
+  font-weight: 350;
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  font-family: 'spartan',sans-serif;
+  color:#cfd0d0;
+
+}
+
+.description-text{
+  padding: 0 15px 0 15px;
+    font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01', sans-serif;
+font-weight: 300;
+font-size: 20px;
+color:#cfd0d0
+
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #00bfff; /* Quantum blue color */
+  color: #00bfff;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width:max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.button:hover {
+  background-color: #00bfff; /* Quantum blue color on hover */
+  color: #FFF; /* White text on hover */
+}
+
+.image-text-box {
+  
+  width:100vw;
+}
+
+.homepage-img{
+  width:300px;
+}
+
+@media screen and (min-width: 865px)  {
+  .image-text-box{
+   margin-left: auto;
+   margin-right: auto;
+          display: grid;
+          /* background-color: #00bfff; */
+          width:90vw;
+          max-width: 900px;
+          grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+      gap:3rem;
+     
+      
+
+         
+          
+  }
+
+
+
+  .image-text-box img{
+   
+    
+  }
+
+  .homepage-img{
+    width:50vw;
+    max-width: 570px;
+  }
+
+  .image-text-box p{
+    width:40vw;
+    max-width: 350px;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: -1em;
+    margin-inline-end: 0px;
+    /* width:100%; */
+
+    
+  }
+
+  .title-text{
+    font-size: 2rem;
+  }
+}

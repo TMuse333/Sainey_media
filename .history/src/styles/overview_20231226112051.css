@@ -1,0 +1,5 @@
+.overview-container{
+    background-color: var(--primary-color);
+    width:100vw;
+    position:absolute;
+}

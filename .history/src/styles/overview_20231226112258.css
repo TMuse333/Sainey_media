@@ -1,0 +1,11 @@
+.overview-container{
+    background-color: var(--primary-color);
+    width:100vw;
+    position:absolute;
+    top:70px;
+    left:0;
+}
+
+.overview-header{
+    height:30vw;
+}

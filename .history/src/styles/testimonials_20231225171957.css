@@ -1,0 +1,187 @@
+.testimonial-container{
+  background-color: var(--primary-color);
+  width:calc(100vw + 0px);
+margin-top: 2rem;
+position: relative;
+box-sizing: border-box;
+
+height:500px;
+
+
+margin-bottom: 5rem;
+
+
+
+
+ 
+
+}
+
+/* .carousel-item{
+ 
+  margin-left: auto;
+} */
+
+
+
+
+
+.testimonial-container  .carousel-control-prev,
+.testimonial-container .carousel-control-next {
+
+ height:50px;
+ position: absolute;
+ top:50%;
+ width:50px;
+
+}
+
+
+
+
+
+.carousel{
+  width:90vw;
+  max-width: 860px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* .testimonial-box{
+  position: relative;
+  padding: 0;
+  height:150px;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -3rem;
+
+  z-index: 0;
+  max-width: 200px;
+
+} */
+
+.testimonial-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.testimonial-intro{
+  margin-left:auto;
+  margin-right: auto;
+  width:80vw;
+  text-align: center;
+}
+
+.testimonial-intro .description-text{
+
+
+
+}
+
+.carousel .carousel-indicators{
+  display:none;
+}
+
+.testimonial-box{
+  height:500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width:300px;
+}
+
+.testimonial-video{
+  width:90vw;
+  max-width: 760px;
+  max-height: 400px;
+}
+
+
+@media screen and (min-width:865px) {
+  .testimonial-container{
+    margin-bottom: 12rem;
+  }
+
+
+  .testimonial-text-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width:90vw;
+      max-width:900px ;
+      
+
+  }
+
+  .testimonial-box{
+    display: flex;
+    flex-direction:column-reverse;
+    height:400px;
+    width:200px;
+    /* background-color: red; */
+    margin-top: -3rem;
+    margin-left: -5rem;
+  
+
+  }
+
+  .testimonial-box p{
+  text-align: center;
+  }
+
+  .testimonial-box h2{
+    position: absolute;
+    bottom: -5px;
+  }
+  
+  .testimonial-box p{
+    position:absolute;
+   
+    
+    
+  }
+
+  .testimonial-container .description-text{
+    text-align: center;
+  }
+
+  .testimonial-video{
+    width:48vw;
+    height:58vw;
+    max-height: 537px;
+    max-width: 638px;
+  }
+
+  .testimonial-container  .carousel-control-prev,
+.testimonial-container .carousel-control-next {
+
+ 
+  /* height:min-content; */
+  /* position: absolute;
+  top:20%;
+  right:20%; */
+
+
+  z-index: 2;
+
+}
+
+
+}
+
+
+  
+
+
+  

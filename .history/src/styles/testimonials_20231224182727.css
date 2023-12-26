@@ -1,0 +1,19 @@
+.testimonial-container{
+  width:100vw;
+  background-color: red;
+}
+
+
+.carousel{
+  width:100vw;
+  background-color: red;
+}
+
+.le-carousel{
+margin-left: -rem;
+
+}
+
+.carousel-inner{
+  width:100px;
+}

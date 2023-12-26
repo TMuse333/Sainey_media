@@ -1,0 +1,170 @@
+.testimonial-container{
+  /* background-color: var(--primary-color);
+  width:calc(100vw + 0px);
+margin-top: 2rem;
+position: relative;
+box-sizing: border-box;
+
+height:500px;
+
+overflow-x: hidden;
+margin-bottom: 8rem; */
+
+
+
+
+ 
+
+}
+
+
+
+/* Assuming you have a container with a class 'video-container' */
+
+
+
+
+
+
+
+.testimonial-container  .carousel-control-prev,
+.testimonial-container .carousel-control-next {
+
+  padding: 1px;
+ 
+  height:min-content;
+  position: absolute;
+  top:50%;
+
+  z-index: 2;
+
+}
+
+
+
+
+
+.carousel{
+  /* width:60vw; */
+  /* max-width: 860px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.carousel-item{
+
+}
+
+
+
+
+.testimonial-box{
+  /* position: relative;
+  padding: 0;
+  height:150px;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -3rem;
+
+  z-index: 0;
+  max-width: 200px; */
+
+}
+
+.testimonial-text-box{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+
+
+.testimonial-intro{
+  /* margin-left:auto;
+  margin-right: auto;
+  width:80vw;
+  text-align: center; */
+}
+
+.testimonial-intro .description-text{
+
+
+  /* text-align: center; */
+}
+
+.testimonial-box{
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem; */
+}
+
+.carousel{
+  width:80vw;
+}
+
+.container{
+  background-color: red;
+  margin-left: auto;
+}
+
+
+@media screen and (min-width:865px) {
+  /* .testimonial-container{
+    margin-bottom: 6rem;
+  }
+
+  .carousel-item{
+    margin-left: 0;
+  }
+
+
+  .testimonial-text-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width:90vw;
+      max-width:900px ;
+      
+
+  }
+
+  .testimonial-box{
+    display: flex;
+    flex-direction:column-reverse;
+    height:400px;
+   
+    margin-top: -3rem;
+    margin-left: -5rem;
+  
+
+  }
+
+  .testimonial-box p{
+  text-align: center;
+  }
+
+  .testimonial-box h2{
+    position: absolute;
+    bottom: -5px;
+  }
+  
+  .testimonial-box p{
+    position:absolute;
+   
+    
+    
+  } */
+
+
+}
+
+
+  
+
+
+  
