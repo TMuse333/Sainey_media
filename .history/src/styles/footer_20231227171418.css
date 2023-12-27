@@ -1,0 +1,42 @@
+.footer-container {
+    background-color: var(--primary-color);
+ 
+    width:100vw;
+    font-family: 'spartan',sans-serif;
+    /* border:1px solid white; */
+  
+}
+
+.quick-links{
+
+    display: flex;
+    /* justify-content: space-around; */
+    font-family: 'spartan',sans-serif;
+    flex-direction: column;
+ 
+   
+
+}
+
+.link {
+
+    color:rgb(87, 181, 253);
+    padding-bottom: 5px;
+    font-family: 'spartan',sans-serif;
+
+}
+
+.footer-logo{
+    width:150px;
+   margin-top: -3rem;
+   margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    
+}
+
+.social-media img{
+    width:50px;
+}
