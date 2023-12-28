@@ -38,9 +38,7 @@ function App() {
 
    </Route>
 
-   <Route path='portfolio' element={<Portfolio/>}>
-    
-   </Route>
+   <Route path=''
 
 
 

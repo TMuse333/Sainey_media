@@ -14,7 +14,6 @@ import {
 
 import Overview from './components/overview'
 import Services from './components/services'
-import Portfolio from './components/portfolio'
 
 
 
@@ -36,10 +35,6 @@ function App() {
 
    <Route path='about-company' element={<Services/>}>
 
-   </Route>
-
-   <Route path='portfolio' element={<Portfolio/>}>
-    
    </Route>
 
 

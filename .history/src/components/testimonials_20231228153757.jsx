@@ -90,12 +90,11 @@ const Testimonials = () => {
       Everyone loves working with me because I am so great and you should too
     </p>
     <Link to='portfolio'>
-
-    
+      
+    </Link>
     <button className='button layout-button'>
       view whole portfolio
     </button> 
-    </Link>
   
   </div>
 

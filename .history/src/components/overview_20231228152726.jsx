@@ -20,7 +20,7 @@ const Overview = () => {
             name:'About Company'
         },
         {
-            dest:'/portfolio',
+            dest:'portfolio',
             name:'Our work'
         },
         

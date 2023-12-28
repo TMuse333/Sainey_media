@@ -95,7 +95,6 @@ const Testimonials = () => {
     <button className='button layout-button'>
       view whole portfolio
     </button> 
-    </Link>
   
   </div>
 

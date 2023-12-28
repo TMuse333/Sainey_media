@@ -24,7 +24,7 @@ const Services = ({stats,services}) => {
         },
       
         {
-            dest:'/portfolio',
+            dest:'portfolio',
             name:'Our work'
         },
         

@@ -36,10 +36,8 @@ function App() {
 
    <Route path='about-company' element={<Services/>}>
 
-   </Route>
-
-   <Route path='portfolio' element={<Portfolio/>}>
     
+
    </Route>
 
 
