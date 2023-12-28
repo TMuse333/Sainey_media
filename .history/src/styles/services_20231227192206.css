@@ -1,0 +1,36 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-box{
+    border:2px solid white;
+}
+
+.red{
+    background-color: rgb(55, 14, 14);
+}
+
+.services-box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+
+}
+
+.service {
+    border: 2px solid black;
+    padding:px;
+}

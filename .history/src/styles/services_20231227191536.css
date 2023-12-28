@@ -1,0 +1,21 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-box{
+    border:2px solid white;
+}
+
+.red{
+    background-color: red;
+}

@@ -1,0 +1,11 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+}

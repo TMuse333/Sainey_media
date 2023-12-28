@@ -1,0 +1,42 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.background-intro{
+    background-image: url('src/media/image-holder-dark.png');
+}
+
+.stat-box{
+    border:2px solid white;
+}
+
+.red{
+    background-color: rgb(45, 49, 24);
+}
+
+.services-box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+
+}
+
+.service {
+    border: 2px solid black;
+    padding:10px 25px 10px 25px;
+    background-color: rgb(42, 59, 73);
+}

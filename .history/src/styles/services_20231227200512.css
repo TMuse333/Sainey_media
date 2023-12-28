@@ -1,0 +1,92 @@
+
+.services-container{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: var(--primary-color);
+}
+
+.company-stats{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.background-intro{
+    background-image: url('src/media/image-holder-dark.png');
+    /* background-image: url('src/media/goku-vs-jiren.jpg'); */
+    background-repeat: cover;
+    background-size: cover; 
+    margin-bottom: -1rem;
+    height:100vh;
+    max-height: 540px;
+    /* width:100vw; */
+}
+
+.background-intro .title-text{
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.background-intro .description-text{
+    font-size: 1.2rem;
+    padding: 0 20px 2rem 20px;
+}
+
+.stat-box{
+    border:2px solid white;
+}
+
+.red{
+    background-color: rgb(45, 49, 24);
+}
+
+.services-box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+
+}
+
+.service {
+    border: 2px solid black;
+    padding:10px 25px 10px 25px;
+    background-color: rgb(42, 59, 73);
+}
+
+@media screen and (min-width:655px){
+
+    .company-stats{
+        flex-direction: row;
+    }
+
+    .background-intro {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        height:811px;
+        margin-bottom: 0;
+        width:100%;
+    }
+
+    .background-intro .title-text{
+        font-size: 3rem;
+        /* color:red; */
+    }
+
+    .company-container {
+        flex-wrap: wrap;
+    }
+
+    .service {
+        width:30%;
+        margin:1.5%;
+        border-sizing:
+    }
+
+
+}
