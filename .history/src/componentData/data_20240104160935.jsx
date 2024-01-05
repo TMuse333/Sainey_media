@@ -37,7 +37,7 @@ export const companyStats = [
     },
     {
         name:'stat 3',
-        description:'100+ fortnite wins'
+        description:''
     },
 ]   
 

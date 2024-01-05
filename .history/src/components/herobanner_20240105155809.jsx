@@ -12,9 +12,11 @@ const Herobanner = () => {
         <div className="hero-container">
             <img src={bg}
             className='logo'/>
-            <h2 className="title-text">
-                Your slogan here
-            </h2>
+            <div className="hero-logo">
+          
+           
+
+            </div>
            
         </div>
     )

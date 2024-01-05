@@ -29,15 +29,15 @@ export const overViewText = 'Lorem ipsum dolor sit amet, consectetur adipiscing 
 export const companyStats = [
     {
         name:'stat 1',
-        description:'10+ clients'
+        description:''
     },
     {
         name:'stat 2',
-        description:'78k on tik tok'
+        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui amet inventore. Cupiditate amet nobis corporis fuga, vitae aliquam officia nostrum aut error modi quis, provident a voluptatem iusto magni.'
     },
     {
         name:'stat 3',
-        description:'100+ fortnite wins'
+        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui amet inventore. Cupiditate amet nobis corporis fuga, vitae aliquam officia nostrum aut error modi quis, provident a voluptatem iusto magni.'
     },
 ]   
 

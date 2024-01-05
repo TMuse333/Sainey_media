@@ -12,7 +12,7 @@ const Herobanner = () => {
         <div className="hero-container">
             <img src={bg}
             className='logo'/>
-            <h2 className="title-text">
+            <h2 className="description-text">
                 Your slogan here
             </h2>
            

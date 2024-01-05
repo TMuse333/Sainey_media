@@ -41,7 +41,7 @@
 }
 
 .stat-box p{
-    text-align: center;
+    
 }
 
 .red{
@@ -94,15 +94,6 @@
   
         margin:1.5%;
         box-sizing:border-box;
-    }
-
-    .company-services .description-text{
-        text-align: center;
-    }
-
-    .background-intro{
-        background-position: 10% 30%;
-        text-align: center;
     }
 
 

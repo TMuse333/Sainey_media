@@ -37,7 +37,7 @@ export const companyStats = [
     },
     {
         name:'stat 3',
-        description:'100+ fortnite wins'
+        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui amet inventore. Cupiditate amet nobis corporis fuga, vitae aliquam officia nostrum aut error modi quis, provident a voluptatem iusto magni.'
     },
 ]   
 

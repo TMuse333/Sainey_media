@@ -37,16 +37,8 @@
     margin-top: -1rem;
 }
 
-@media screen and (min-width:455px) {
-    .logo{
-        max-height: 250px;
-    }
-
-    .hero-container{
-        background-position: center 55%;
-    }
-
-
+@media screen and (min-width:655px) {
+    
 }
 
 
@@ -57,8 +49,7 @@
         margin-right: auto;
     }
 
-
-    .hero-container{
-        background-position: center 55%;
+    .hero-container .description-text{
+        font-size: 2rem;
     }
 }

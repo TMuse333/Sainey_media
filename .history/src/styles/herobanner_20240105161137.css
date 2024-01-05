@@ -42,10 +42,6 @@
         max-height: 250px;
     }
 
-    .hero-container{
-        background-position: center 55%;
-    }
-
 
 }
 
@@ -59,6 +55,6 @@
 
 
     .hero-container{
-        background-position: center 55%;
+        
     }
 }
