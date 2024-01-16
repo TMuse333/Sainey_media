@@ -1,0 +1,99 @@
+.outro-container{
+    width: 100vw;
+    /* background-image: url('src/media/image-holder-dark.png'); */
+    /* background-image: url('src/media/goku-vs-jiren.jpg'); */
+    /* height:90vw; */
+ display: flex;
+ align-items: center;
+ background-repeat: cover;
+ background-size: cover; 
+background-color:#BE9F5B ;
+ position: relative;
+ /* border:2px solid white; */
+/* margin-bottom: 5rem;
+margin-top: 6rem; */
+margin-top: 8rem;
+
+
+
+}
+
+.outro-text-box{
+margin-top: 2rem;
+
+}
+
+.outro-text-box .title-text {
+    
+    font-size: 2.25rem;
+   
+}
+
+.outro-text-box .description-text{
+    font-size: 1.2rem;
+    padding-left:10px;
+    padding-right:25px;
+  
+}
+
+.calendly-container{
+
+}
+
+.content2-text{
+    white-space: pre-line;
+}
+
+
+
+@media screen and (min-width:655px) {
+    .outro-container{
+        text-align: left;
+        background-position: center 50%;
+        margin-top: 12rem;
+    }
+
+    .outro-text-box{
+        /* margin-top: 3rem;
+        margin-left: 2rem; */
+        width:90vw;
+        margin-left:2rem
+    }
+
+    .outro-text-box .description-text{
+        padding: 0;
+    }
+
+    .outro-container{
+        /* height:80vw; */
+    }
+}
+
+@media screen and (min-width: 865px){
+    .outro-container{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        /* height:90vw;
+        text-align: center;
+        max-height: 668px;
+        margin-top: 10rem; */
+       
+    }
+
+    .outro-text-box .description-text{
+        text-align: center;
+        margin:auto;
+        width:80%;
+    padding: 0;
+       
+        
+    }
+
+    
+
+    .outro-text-box {
+        margin-top: 3rem;
+    }
+    
+}
