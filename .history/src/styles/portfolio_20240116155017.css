@@ -1,0 +1,10 @@
+.portfolio-container{
+    background-color: 
+    width:100vw;
+    position: absolute;
+    top:70px;
+    left:0;
+    height:80vh;
+    position: relative;
+    z-index: 0;
+}
