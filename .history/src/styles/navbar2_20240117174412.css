@@ -1,0 +1,61 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-contents{
+    display: flex;
+    flex-direction: row;
+transform: translateY(-0.5rem);
+
+   justify-content: center;
+}
+
+.navbar2-list{
+    margin-top: -0.5rem;
+    background-color:#a78c50;
+    list-style: none;
+    /* color:red; */
+    position: absolute;
+    top:90%;
+    z-index: 100000;
+    /* border:2px solid #987f48;
+    border-radius: 1rem; */
+    text-align: center;
+    padding: 0;
+    width:100px;
+}
+
+.navbar2-list li{
+    text-align: center;
+  
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 3rem;
+}
+
+.navbar2-logo{
+    height:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-desktop{
+    background-color: #a78c50;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0 2rem 0 2rem;
+    width:15rem
+}
+

@@ -1,0 +1,64 @@
+.hero-container{
+
+    width:100vw;
+ margin-bottom: 2rem;
+    padding-top: 30px;
+    /* background-image: url(src/media/image-holder-dark.png); */
+   height: 400px;
+   background-repeat: no-repeat;
+   background-size: cover; 
+   background-position: 30% 10%;
+ 
+    
+}
+
+.hero-logo{
+    height:20px;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo p{
+    align-items: center;
+    font-size: 30px;
+    color:white;
+}
+
+.hero-container .description-text{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.logo{
+  height:55vw;
+    margin-top: -1rem;
+}
+
+@media screen and (min-width:455px) {
+    .logo{
+        max-height: 250px;
+    }
+
+    .hero-container{
+        background-position: center 55%;
+    }
+
+
+}
+
+
+@media screen and (min-width:865px){
+    .hero-logo {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-container{
+        background-position: center 55%;
+    }
+}

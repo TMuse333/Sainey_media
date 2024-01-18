@@ -1,0 +1,26 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+
+}
+
+.navbar-contents{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+
+   justify-content: center;
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Abhaya Libre', sans-serif;
+    font
+}
+
+.navbar2-logo{
+    height:50px;
+}
+

@@ -1,0 +1,17 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.navbar2-logo{
+    height:50px;
+}
+

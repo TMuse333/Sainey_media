@@ -1,0 +1,113 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-contents{
+    display: flex;
+    flex-direction: row;
+/* transform: translateY(-0.5rem); */
+
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar2-list{
+    margin-top: 0rem;
+    background-color:#a78c50;
+    list-style: none;
+    /* color:red; */
+    position: absolute;
+    top:90%;
+    z-index: 100000;
+    /* border:2px solid #987f48;
+    border-radius: 1rem; */
+    text-align: center;
+    padding: 0;
+    width:130px;
+    border-radius: 15px;
+}
+
+.navbar2-list li{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 2rem;
+}
+
+.navbar2-logo{
+    height:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-desktop{
+  
+    position: absolute;
+    top:30%;
+    right:0%;
+    /* background-color: #a78c50; */
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    /* padding:0 2rem 0 2rem; */
+    width:25rem;
+}
+
+.navbar-desktop span{
+    font-size: 1rem;
+}
+
+.desktop{
+    display: none;
+}
+
+@media screen and (min-width:655px){
+    .navbar-text{
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .navbar-desktop{
+        display: flex;
+    }
+
+    .desktop{
+        position:absolute;
+      font-size: 1.3rem;
+        top:40%;
+        display: flex;
+        width:15rem;
+        transform: translate(-50%, -50%);
+        left:50%;
+        /* background-color: #a78c50; */
+        justify-content: space-between;
+    }
+
+    .right{
+        /* right:75%; */
+        width:60%;
+        
+    }
+
+    .left{
+        /* left:75%; */
+    }
+}
+

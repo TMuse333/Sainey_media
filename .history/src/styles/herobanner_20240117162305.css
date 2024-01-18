@@ -1,0 +1,137 @@
+.hero-container{
+background-color: white;
+    width:100vw;
+ 
+ margin-bottom: -3rem;
+    /* padding-top: 30px; */
+    /* background-image: url(src/media/image-holder-dark.png); */
+    /* background-image: url(src/media/SAINEY-MEDIA.png); */
+   height: 440px;
+   /* background-repeat: no-repeat;
+   background-size: cover; 
+   background-position: 30% 10%; */
+ background-size: contain;
+ background-repeat: no-repeat;
+ /* display: flex; */
+ /* align-items: center; */
+ position: relative;
+    
+}
+
+.black{
+background-color:#242424;
+    width:100vw;
+    position: relative;
+    z-index: 10;
+   
+}
+.top{
+    /* height:40px; */
+}
+.bottom{
+    /* height:40px; */
+    top:5%;
+}
+
+.logo2{
+    width:100vw;
+    display: flex;
+position: absolute;
+/* height:250px; */
+top:40%;
+left:50%;
+transform: translateX(-50%);
+    
+   
+}
+
+.hero-wrapper{
+height:90%;
+/* margin-top: -1rem; */
+background-color: white;
+}
+
+.slogan{
+position: absolute;
+left:50%;
+transform: translateX(-50%);
+bottom:10%;
+}
+
+.hero-logo{
+    height:20px;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo p{
+    align-items: center;
+    font-size: 30px;
+    color:white;
+}
+
+.hero-container .description-text{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.logo{
+  height:55vw;
+    margin-top: -1rem;
+}
+
+@media screen and (min-width:655px) {
+ 
+    .hero-container{
+        height:650px
+    }
+
+    .bottom{
+    top:10%
+    }
+
+    .hero-wrapper{
+        /* height:105%; */
+    }
+
+    .logo2{
+        width:100vw;
+        display: flex;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    }
+
+
+}
+
+
+@media screen and (min-width:865px){
+    .hero-logo {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bottom{
+        top:40%;
+    }
+
+
+    .hero-container{
+        background-position: center 55%;
+    }
+
+    .logo2{
+        margin-top: -3rem;
+        max-width: 1200px;
+    }
+
+    .hero-wrapper{
+        max-height: 358px;
+    }
+}

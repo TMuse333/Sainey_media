@@ -1,0 +1,121 @@
+#root {
+
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+:root{
+  /* --primary-color:rgb(29, 40, 49); */
+  --primary-color:(#BE9F5B);
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left:0;
+  top:1000px;
+  background: radial-gradient(circle at center, #141009, #000000);
+  overflow-x: hidden;
+
+}
+
+#tsparticles{
+  height:10px !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  top:10% !important;
+}
+
+
+.title-text{
+  /* font-family: 'spartan',sans-serif; */
+  font-family: 'Abhaya Libre', sans-serif;
+  color:#000000;
+  font-size: 2rem;
+
+}
+
+.description-text{
+  font-family: 'spartan',sans-serif;
+  color:#111212;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #695833; /* Quantum blue color */
+  color: #4e4125;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width:max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.light-button{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #c3a157; /* Quantum blue color */
+  color: #c3a157;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width:max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.light-button:hover{
+  background-color:#c3a157 ;
+  color:whitesmoke;
+}
+
+.layout-button{
+  /* margin: 3rem; */
+}
+
+
+.description-text{
+  font-family: 'Palatino Sans', 'Palatino Sans Informal', 'Palatino Sans Text', 'Palatino Sans W1G', 'Palatino Sans W01',sans-serif;
+  color:#ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 1rem;
+ padding: 1rem 1rem 0 1rem;
+}
+
+
+
+
+@media screen and (min-width:865px){
+  .description-text{
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+
+}
+
+
+
+
+
+
+
+

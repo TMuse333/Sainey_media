@@ -1,0 +1,45 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.navbar-contents{
+    display: flex;
+    flex-direction: row;
+transform: translateY(-0.5rem);
+
+   justify-content: center;
+}
+
+.navbar2-list{
+    background-color:#BE9F5B;
+    list-style: none;
+    /* color:red; */
+    position: absolute;
+    top:90%;
+    z-index: 100000;
+    border:2px solid #987f48;
+}
+
+.navbar2-list li{
+    text-align: center;
+    margin-right: 1rem;
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 3rem;
+}
+
+.navbar2-logo{
+    height:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
