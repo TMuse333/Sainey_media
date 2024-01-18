@@ -1,0 +1,60 @@
+.hero2-container{
+    width:100vw;
+    background:transparent;
+
+position: relative;
+height:80vh;
+display: flex;
+align-items: center;
+}
+
+.text-image-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box img{
+    height:30vw;
+}
+
+.text-box{
+    width:80vw;
+    margin-left:auto;
+}
+
+
+
+.hero-text{
+    color:white;
+}
+
+
+@media screen and (min-width:655px){
+    .text-image-box{
+        flex-direction:row-reverse;
+    }
+
+    .text-box{
+        width:50vw;
+    }
+
+    .text-box h2{
+        font-size:4rem;
+        
+    }
+
+    .text-box p{
+        font-size: 1.75rem;
+    }
+
+    .image-box{
+        width:50vw;
+    }
+}
+
+
+@media screen and (min-width:865px){
+    .text-box{
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,23 @@
+.hero2-container{
+    width:100vw;
+    background:transparent;
+
+
+}
+
+.text-image-box{
+    display: flex;
+}
+
+
+
+.hero-text{
+    color:white;
+}
+
+
+@media screen and (min-width:655px){
+    .text-image-box{
+        
+    }
+}

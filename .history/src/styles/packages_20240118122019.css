@@ -1,0 +1,30 @@
+.packages-container{
+    background: radial-gradient(circle at center, #e5c06f, #776237);
+    width:100vw;
+    /* display: flex;
+    display: row; */
+
+}
+
+.package-1{
+    background-color: #776237;
+}
+
+.package-1,.package-2 li{
+    color:white;
+list-style:none;
+}
+
+/* .package-list{
+    text-decoration: none;
+} */
+
+.package-1 .title-text{
+    /* color:white; */
+}
+
+.package-2{
+    background-color: #776237;
+}
+
+
