@@ -1,0 +1,156 @@
+.navbar2-container{
+    width:100vw;
+    height:76px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 10rem; */
+  margin-top: -4rem;
+  /* background-color: #a78c50; */
+
+}
+
+.nav-link{
+    text-decoration: none !important;
+    color:black
+}
+
+#no-underline{
+    text-decoration: none;
+}
+
+.navbar-contents{
+    display: flex;
+    flex-direction: row;
+/* transform: translateY(-0.5rem); */
+
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar2-list{
+    margin-top: 0rem;
+    background-color: rgba(167, 140, 80, 0.6);
+   
+    list-style: none;
+
+    position: absolute;
+    top:90%;
+    z-index: 100000;
+
+    text-align: center;
+    padding: 0;
+    width:130px;
+    border-radius: 15px;
+}
+
+#media{
+margin-top: -2.75rem;
+}
+
+.navbar2-list li{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  
+}
+
+
+.navbar-text{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 2rem;
+    color:white;
+}
+
+.navbar2-logo{
+    height:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-desktop{
+  
+    position: absolute;
+    top:30%;
+    right:0%;
+    /* background-color: #a78c50; */
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    /* padding:0 2rem 0 2rem; */
+    width:25rem;
+}
+
+.navbar-desktop span{
+    font-size: 1rem;
+}
+
+.desktop{
+    display: none;
+}
+
+.big {
+    display: flex;
+    transform: translateX(-5rem);
+    width:10rem;
+    /* background-color: #a78c50; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:380px){
+    #media{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:655px){
+    .navbar-text{
+        font-size: 3rem;
+    }
+
+    #media{
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    .navbar-desktop{
+        display: flex;
+        color:white;
+    }
+
+    .desktop span {
+        color:white;
+    }
+
+    .desktop{
+        position:absolute;
+      font-size: 1.3rem;
+        top:50%;
+        display: flex;
+        width:15rem;
+        transform: translate(-50%, -50%);
+        left:50%;
+        /* background-color: #a78c50; */
+        justify-content: space-between;
+    }
+
+    .right{
+        /* right:75%; */
+        width:60%;
+
+    }
+
+    .left{
+        /* left:75%; */
+        width:80%;
+    }
+}
+
