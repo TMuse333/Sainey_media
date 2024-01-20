@@ -5,7 +5,7 @@
     padding-top: 3px;
     /* background-color: #BE9F5B; */
 
-    background: radial-gradient(circle at center, rgba(229, 192, 111), rgba(119, 98, 55));
+    background: radial-gradient(circle at center, rgba(229, 192, 111, 0.5), rgba(119, 98, 55, 1.5));
 
 /* margin-top: 4rem; */
 

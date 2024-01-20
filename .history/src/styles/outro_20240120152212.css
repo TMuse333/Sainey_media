@@ -30,7 +30,7 @@ background: radial-gradient(circle at center, rgba(229, 192, 111, 0.5), rgba(119
     max-width: 1000px;
     background-color: #BE9F5B;
     padding:1rem;
-    border-radius:1rem;
+    border-rad
 }
 
 @media screen and (min-width:655px) {

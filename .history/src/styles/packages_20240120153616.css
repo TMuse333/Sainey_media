@@ -1,20 +1,9 @@
 .packages-container{
     /* background: radial-gradient(ellipse at center, #e5c06f, #776237); */
     /* background: linear-gradient(to bottom right, #BE9F5B, #a2874e); */
-    /* background-color: black; */
-    /* background: radial-gradient(circle at center, #000000, #000000, #BE9F5B);
+    background-color: black;
+    background: radial-gradient(circle at center, #000000, #000000, #BE9F5B);
     background: radial-gradient(circle at center, #000000, #000000, #BE9F5B, #000000);
-    background: radial-gradient(circle at 80%, #000000 20%, #BE9F5B 25%, #000000 30%);
-    background: radial-gradient(circle at 50% 10%, #000000 10%, #BE9F5B 15%, #000000 20%); */
-    background: radial-gradient(ellipse at 50% 0%, #000000 10%, #BE9F5B 15%, #000000 20%);
-
-    background: radial-gradient(circle at 50% 0%, #ffffff 10%, #d6d6d6 30%, #bebebe 50%, #d6d6d6 70%, #ffffff 90%);
-    background: radial-gradient(circle at 50% 30%, #000000 10%, #2a2a2a 30%, #be9f5b 50%, #2a2a2a 70%, #000000 90%);
-    /* background: radial-gradient(circle at 50% 30%, #000000 5%, #2a2a2a 25%, #be9f5b 50%, #2a2a2a 75%, #000000 95%); */
-
-
-
-
 
     width:100vw;
 position: relative;
@@ -26,7 +15,6 @@ position: relative;
 
 .packages-container h1,p{
     padding:0 1rem 0 1rem;
-    color:white;
 }
 
 .package-intro{
@@ -45,7 +33,7 @@ position: relative;
     padding:2rem 0 2rem 0;
     margin-bottom: 3rem;
     border: 4px solid #463921;
-    color:white;
+    color:white
 }
 
 .package-1 li,.package-2 li{
@@ -67,12 +55,12 @@ position: relative;
     /* padding-left: 3.5rem; */
 }
 
-.package-1 .title-text, .package-2 .title-text{
-    color:white;
+.package-1 .title-text{
+    /* color:white; */
 }
 
 .package-offer{
-    color:white;
+    color:black;
     font-weight: 500;
 }
 
