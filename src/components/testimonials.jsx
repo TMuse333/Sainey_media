@@ -1,10 +1,10 @@
 import React, { useState,useRef,useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import dunk from '../media/best_dunk.mp4';
+// import dunk from '../media/best_dunk.mp4';
 
-import oneLeg from '../media/one-leg-dunk.mp4'
-import vert from '../media/standing-2-hander.mp4'
+// import oneLeg from '../media/one-leg-dunk.mp4'
+// import vert from '../media/standing-2-hander.mp4'
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -17,19 +17,19 @@ const Testimonials = () => {
     {
       id: 1,
       title: 'The Quantum Card Game',
-      src: oneLeg,
+      // src: oneLeg,
       credit: 'TMuse',
     },
     {
       id: 2,
       title: 'Dunking',
-      src: dunk,
+      // src: dunk,
       credit: 'TMuse',
     },
     {
       id:3,
       title:'offvert',
-      src:vert,
+      // src:vert,
       credit: 'TMuse',
     }
   ];
