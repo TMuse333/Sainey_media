@@ -164,7 +164,7 @@ const style = {
   backgroundColor:
   '#100000',
   height: isMobile ?'45%' : '17%',
-  // height:'30%',
+
   position:'absolute',
   left: isAnimated ? '100%': '10%',
   transition:'width 1.7s ease-in, left 2s ease-in',
