@@ -5,7 +5,7 @@
     z-index: 100;
     display: flex;
     justify-content: center;
-margin-bottom: 2rem;
+
   margin-top: -4rem;
 
   flex-direction: row;
@@ -118,8 +118,7 @@ margin-top: -2.75rem;
 @media screen and (min-width:655px){
 
     .navbar2-container{
-       margin-bottom: 1rem;
-       /* height:50vh; */
+       margin
     }
 
    .navbar-text{

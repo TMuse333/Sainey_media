@@ -5,7 +5,7 @@
     z-index: 100;
     display: flex;
     justify-content: center;
-margin-bottom: 2rem;
+
   margin-top: -4rem;
 
   flex-direction: row;
@@ -117,14 +117,7 @@ margin-top: -2.75rem;
 
 @media screen and (min-width:655px){
 
-    .navbar2-container{
-       margin-bottom: 1rem;
-       /* height:50vh; */
-    }
-
-   .navbar-text{
-    font-size: 2rem;
-   }
+   .nav
 
     .navbar2-list{
         background-color: rgba(167, 140, 80, 0.6);
@@ -135,7 +128,7 @@ margin-top: -2.75rem;
     }
 
     #media{
-        margin-top: 0.5rem;
+        margin-top: 0;
     }
 }
 

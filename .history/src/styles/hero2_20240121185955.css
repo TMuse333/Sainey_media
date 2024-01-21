@@ -65,22 +65,17 @@ justify-content: center;
     .text-image-box{
         margin-top: -3rem;
         flex-direction:row-reverse;
-        align-items: center;
-        justify-content: center;
         /* position: absolute;
         top:-30%; */
     }
 
-    .hero2-container{
-        height:65vh
-    }
-
     .logo-box{
-        
+        height:100%;
+        transform: translateX(-2rem);
     }
 
     .logo-box img{
-       /* margin-top:8rem; */
+       margin-top: -5rem;
        height:280px
        
     }
@@ -121,10 +116,6 @@ justify-content: center;
     }
     .text-box{
         margin-left: 2rem;
-    }
-
-    .logo-box img{
-        height:400px;
     }
 
     .text-box h2{

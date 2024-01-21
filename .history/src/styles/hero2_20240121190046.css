@@ -71,12 +71,9 @@ justify-content: center;
         top:-30%; */
     }
 
-    .hero2-container{
-        height:65vh
-    }
-
     .logo-box{
-        
+        height:100%;
+        transform: translateX(-2rem);
     }
 
     .logo-box img{
@@ -121,10 +118,6 @@ justify-content: center;
     }
     .text-box{
         margin-left: 2rem;
-    }
-
-    .logo-box img{
-        height:400px;
     }
 
     .text-box h2{

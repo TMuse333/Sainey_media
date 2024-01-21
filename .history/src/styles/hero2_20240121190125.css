@@ -71,10 +71,6 @@ justify-content: center;
         top:-30%; */
     }
 
-    .hero2-container{
-        height:65vh
-    }
-
     .logo-box{
         
     }
@@ -123,8 +119,8 @@ justify-content: center;
         margin-left: 2rem;
     }
 
-    .logo-box img{
-        height:400px;
+    .image-box img{
+        
     }
 
     .text-box h2{
