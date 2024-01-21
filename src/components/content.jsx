@@ -4,29 +4,45 @@ import sample from '../media/image-holder.jpg'
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Content = ({ title, description, rev, link, linkText, hasTitle, id, hasAnimation }) => {
+const Content = ({ title, description, rev, link, linkText, hasTitle, id, hasAnimation, hasTilt }) => {
     const [isAnimated, setIsAnimated] = useState(false);
+    const [tiltAngle, setTiltAngle] = useState(30);
     const contentRef = useRef();
 
     useEffect(() => {
         const handleScroll = () => {
             const contentElement = contentRef.current;
-
+    
             const elementTop = contentElement.getBoundingClientRect().top;
-            const elementBottom = contentElement.getBoundingClientRect().bottom;
+            const windowHeight = window.innerHeight;
+    
+            // Calculate the percentage of the element in view
+            const visiblePercent = Math.max(0, Math.min(100, (windowHeight - elementTop) / windowHeight * 100));
+    
+            // Gradually decrease the tilt angle from 10 to 0 as 40% of the element becomes visible
+            const newTiltAngle = Math.max(0, 10 - (visiblePercent / 60) * 10);
+    
+            console.log("Visible Percentage:", visiblePercent);
+            console.log("Tilt Angle:", newTiltAngle);
+            setTiltAngle(newTiltAngle)
+    
             const offset = 350;
-
-            if (elementTop < window.innerHeight - offset && elementBottom > offset) {
+    
+            if (elementTop < windowHeight - offset) {
                 setIsAnimated(true);
             }
         };
 
+       
+    
         window.addEventListener("scroll", handleScroll);
-
+    
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [id]);
+    
+    
 
     const animations = {
         hidden: {
@@ -55,8 +71,16 @@ const Content = ({ title, description, rev, link, linkText, hasTitle, id, hasAni
         }
     };
 
+
+
+  
+    
+
     return (
-        <div className="content-container" ref={contentRef} id={id}>
+        <div className="content-container" ref={contentRef} id={id}
+        style={hasTilt ? { transform: `perspective(1000px) rotateX(${tiltAngle}deg)` } : null}
+
+    >
             <div className={`image-text-box ${rev ? 'reverse' : 'image-text-box'}`}>
                 {rev ? (
                     <div className="description-box">

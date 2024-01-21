@@ -49,6 +49,7 @@ const Layout2 = () => {
          hasTitle={false}
         id={'company'}
         hasAnimation={true}
+        hasTilt={true}
          />
 
          <Testimonials/>
