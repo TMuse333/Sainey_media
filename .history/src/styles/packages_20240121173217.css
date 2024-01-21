@@ -1,0 +1,158 @@
+.packages-container{
+    /* background: radial-gradient(ellipse at center, #e5c06f, #776237); */
+    /* background: linear-gradient(to bottom right, #BE9F5B, #a2874e); */
+    background-color: black;
+overflow-x: hidden;
+
+
+    width:100vw;
+position: relative;
+    padding-top:1.5rem;
+    /* display: flex;
+    display: row; */
+
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.packages-container h1,p{
+    padding:0 1rem 0 1rem;
+    
+  
+}
+
+.packages-container p{
+    color:black;
+}
+
+.package-intro{
+    /* background-color: #BE9F5B; */
+   
+    /* background: linear-gradient(to right, #be9f5b, #9e8249); */
+
+    background: linear-gradient(to right, #6c5933, #be9f5b, #6c5933);
+
+
+
+
+    width:100vw;
+    padding: 1rem 0 1rem 0rem;
+    margin-bottom: 1.5rem;
+    /* border: 4px solid #cecece; */
+}
+
+
+
+.package-1, .package-2{
+    /* background-color: #937945; */
+    /* background-color: #BE9F5B; */
+    background: radial-gradient(ellipse at 50% 0%, #be9f5b, #6c5933);
+
+
+    padding:2rem 0 2rem 0;
+    margin-bottom: 3rem;
+    border: 4px solid #cecece;
+}
+
+.package-1 li,.package-2 li{
+    color:white;
+    /* color:black; */
+    padding: 0 2rem 0 2rem;
+ 
+
+}
+
+.package-1 h1, .package-2 h1{
+    font-weight: 900;
+}
+
+.package-list{
+    list-style:none;
+    padding:0;
+    margin-top: 1rem;
+
+}
+
+.package-list li{
+    margin-bottom: 1rem;
+    /* color:black; */
+
+font-weight: 400;
+}
+
+.package-offer{
+    color:black;
+    font-weight: 600;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.package-outro{
+    /* background: linear-gradient(to right, #be9f5b, #9e8249); */
+    background: linear-gradient(to right, #6c5933, #be9f5b, #6c5933);
+
+    padding:2rem 1rem 0 1rem;
+    margin-bottom: 1.75rem;
+    border: 4px solid #cecece;
+}
+
+
+
+
+
+@media screen and (min-width:655px){
+   .packages-box{
+    display: flex;
+    width:100vw;
+    justify-content: space-between;
+    max-width:1600px;
+    margin:auto;
+   }
+
+   .portfolio-container .description-text{
+        max-width: 1000px;
+   }
+
+   .package-1, .package-2{
+    width:45vw;
+    
+   }
+
+   .package-1{
+    margin-left:2rem;
+   }
+
+   .package-2{
+    margin-right:2rem;
+   }
+
+   .package-intro{
+
+    width:100vw;
+    margin:3rem auto 2rem auto;
+    font-size: 1.3rem;
+    padding:1rem 5rem 1rem 5rem;
+
+   }
+
+   .package-outro{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+   
+   }
+
+   @media screen and (min-width:865px) {
+    .package-intro p{
+        max-width: 1200px;
+        margin:auto;
+    }
+
+    .package-intro h1{
+        font-size: 3rem;
+    }
+   }
+}

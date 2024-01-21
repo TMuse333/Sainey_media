@@ -1,0 +1,9 @@
+.paragraph-container{
+    width:100vw;
+    background: radial-gradient(circle at center, rgba(229, 192, 111), rgba(119, 98, 55));
+    position: relative;
+}
+
+.paragraph-container .description-text{
+    margin: auto;
+}
