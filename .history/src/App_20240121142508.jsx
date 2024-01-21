@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import './App.css'
 
@@ -15,30 +15,13 @@ import Portfolio from './components/portfolio'
 
 import Layout2 from './components/layout2'
 import Packages from './components/packages'
-import Loading from './components/loading';
 
 function App() {
   const [count, setCount] = useState(0)
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading delay (replace with actual loading logic)
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    // Cleanup function
-    return () => clearTimeout(loadingTimeout);
-  }, []);
+  
 
   return (
     <>
-
-    {loading ? (
-      <Loading/>
-    ) : (
-
-  
     <Routes>
    
    <Route path='/' 
@@ -60,7 +43,6 @@ function App() {
 
 
  </Routes>
-   )}
      
     </>
   )

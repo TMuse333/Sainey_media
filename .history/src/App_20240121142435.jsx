@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
-
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 
 import {
@@ -10,39 +11,22 @@ import {
 } from "react-router-dom";
 
 import Overview from './components/overview'
-
+import Services from './components/services'
 import Portfolio from './components/portfolio'
 
 import Layout2 from './components/layout2'
 import Packages from './components/packages'
-import Loading from './components/loading';
-
+import Overview2 from './components/overview2'
 function App() {
   const [count, setCount] = useState(0)
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading delay (replace with actual loading logic)
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    // Cleanup function
-    return () => clearTimeout(loadingTimeout);
-  }, []);
 
   return (
     <>
-
-    {loading ? (
-      <Loading/>
-    ) : (
-
-  
     <Routes>
    
    <Route path='/' 
    element={<Layout2/>}
+  //  element={<Layout/>}
    />
 
    <Route path='about-ceo' element={<Overview/>}>
@@ -60,7 +44,6 @@ function App() {
 
 
  </Routes>
-   )}
      
     </>
   )

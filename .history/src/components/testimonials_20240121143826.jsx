@@ -1,11 +1,16 @@
 import React, { useState,useRef,useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 
+// import dunk from '../media/best_dunk.mp4';
 
+// import oneLeg from '../media/one-leg-dunk.mp4'
+// import vert from '../media/standing-2-hander.mp4'
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { homepageVideos } from '../componentData/data';
+import { portfolioVideos,homepageVideos } from '../componentData/data';
 
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
   const videos = homepageVideos.map((src, index) => ({
@@ -13,9 +18,28 @@ const Testimonials = () => {
     src: src
   }));
 
+  console.log(videos)
 
+  const descriptions = [
+  
+  
+    {
+      name:'Escalade',
+      description:`"He is pure, give him your money"`
+    },
+    {
+      name:'Lujain James',
+      description:`"I make more back than i spend"`
+    },
+    {
+      name:'Aboubacar',
+      description:`"Wow he is such a real one"`
 
+    },
 
+   
+    
+  ]
 
   const [isMobile, setIsMobile] = useState(true);
 

@@ -1,11 +1,13 @@
 import React, { useState,useRef,useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-
+]
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { homepageVideos } from '../componentData/data';
+import { portfolioVideos,homepageVideos } from '../componentData/data';
 
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
   const videos = homepageVideos.map((src, index) => ({

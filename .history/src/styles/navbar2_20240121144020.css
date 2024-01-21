@@ -5,17 +5,17 @@
     z-index: 100;
     display: flex;
     justify-content: center;
-
+    /* margin-bottom: 10rem; */
   margin-top: -4rem;
-
+  /* background-color: #a78c50; */
   flex-direction: row;
-  
+  bs
 
 }
 
 .nav-link{
     text-decoration: none !important;
-    color:black;
+    color:black
 }
 
 #no-underline{
@@ -59,9 +59,7 @@ margin-top: -2.75rem;
 }
 
 
-.navbar2-container .navbar-text{
-    color:white;
-}
+
 
 .navbar-text{
     margin-top:auto;

@@ -1,11 +1,16 @@
 import React, { useState,useRef,useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 
+// import dunk from '../media/best_dunk.mp4';
 
+// import oneLeg from '../media/one-leg-dunk.mp4'
+// import vert from '../media/standing-2-hander.mp4'
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { homepageVideos } from '../componentData/data';
+import { portfolioVideos,homepageVideos } from '../componentData/data';
 
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
   const videos = homepageVideos.map((src, index) => ({
@@ -13,9 +18,28 @@ const Testimonials = () => {
     src: src
   }));
 
+  console.log(videos)
 
+  const descriptions = [
+  
+  
+    {
+      name:'Escalade',
+      description:`"He is pure, give him your money"`
+    },
+    {
+      name:'Lujain James',
+      description:`"I make more back than i spend"`
+    },
+    {
+      name:'Aboubacar',
+      description:`"Wow he is such a real one"`
 
+    },
 
+   
+    
+  ]
 
   const [isMobile, setIsMobile] = useState(true);
 
@@ -42,11 +66,13 @@ const Testimonials = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   const handleSlide = (index) => {
-   
+    const scrollPosition = window.scrollY +300;
 
     setCurrentIndex(index);
     setIsPlaying(true);
+  
 
+      // window.scrollTo(-10, scrollPosition);
 
     
   };
@@ -82,7 +108,38 @@ const Testimonials = () => {
     };
   }, ['testimonial']);
 
+  
 
+
+  const animations = {
+    hidden:{
+      width:'0%',
+      opacity:0,
+      transition:
+      {duration:3}
+
+    },
+    visible:{
+      width:'100%',
+      x:0,
+      opacity:1,
+      transition:
+      {duration:3}
+    }
+  }
+
+const buttonAnimation = {
+  initial:{
+    opacity:0
+  },
+  visible:{
+    opacity:1,
+    transition:{
+      delay:2,
+      duration:0.6
+    }
+  }
+}
   
 const style = {
   width:'80vw',
@@ -114,15 +171,16 @@ const carouselStyle = {
 
      
 
-  <div
-
+  <motion.div
+  // initial={animations.hidden}
+  // animate={isAnimated ? animations.visible : animations.hidden}
    className='testimonial-intro'>
-    <h1
+    <motion.h1
      className='testimonial-name'
      
      >
       Testimonials
-    </h1>
+    </motion.h1>
     <div className='blocker'
     style={style}>
 
@@ -131,9 +189,21 @@ const carouselStyle = {
     Don't just take our word for it. Listen to what our valued clients have to say about their experience with Sainey Media. Their stories are a testament to the impact we've made in helping businesses thrive in the digital world.
 
     </p>
+    {/* <Link to='portfolio'>
 
+    
+    <motion.button
+    initial={buttonAnimation.initial}
+    animate={isAnimated ? buttonAnimation.visible : buttonAnimation.initial}
+     className='light-button '
+    style={{
+      marginTop:'1rem'
+    }}>
+      view whole portfolio
+    </motion.button> 
+    </Link> */}
   
-  </div>
+  </motion.div>
 
 
 
@@ -156,7 +226,8 @@ const carouselStyle = {
             {currentIndex === index && ( // Render the ReactPlayer only for the current index
               <video className='testimonial-video'
               id='main-testimonial'
-             
+              //  width='300px' 
+              //  height='500px'
                 controls
                 loading='lazy'>
                 <source src={video.src} type="video/mp4"/>
@@ -166,6 +237,41 @@ const carouselStyle = {
         ))}
       </Carousel>
 
+
+  
+
+    
+
+      {/* <div className='testimonial-box'>
+        <AnimatePresence>
+          <motion.h2 className='testimonial-name'
+          key={currentIndex}
+          initial={{opacity:0}}
+          animate={{ opacity: 1, 
+            transition: { delay: 0.7 } 
+          }}
+          exit={{transition:'all 0.3s ease-in',
+        opacity:0}}
+          >
+            {descriptions[currentIndex].name}
+          </motion.h2>
+
+        </AnimatePresence>
+        <AnimatePresence>
+          <motion.p className='description-text'
+          key={currentIndex}
+          initial={{opacity:0}}
+          animate={{ opacity: 1, 
+            transition: { delay: 1 } 
+          }}
+          exit={{transition:'all 0.3s ease-in',
+        opacity:0}}
+          >
+          {descriptions[currentIndex].description}
+          </motion.p>
+
+        </AnimatePresence>
+      </div> */}
 
       </div>
       

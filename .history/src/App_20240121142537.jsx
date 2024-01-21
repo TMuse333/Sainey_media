@@ -15,7 +15,6 @@ import Portfolio from './components/portfolio'
 
 import Layout2 from './components/layout2'
 import Packages from './components/packages'
-import Loading from './components/loading';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,11 +33,7 @@ function App() {
   return (
     <>
 
-    {loading ? (
-      <Loading/>
-    ) : (
-
-  
+    
     <Routes>
    
    <Route path='/' 
@@ -60,7 +55,6 @@ function App() {
 
 
  </Routes>
-   )}
      
     </>
   )

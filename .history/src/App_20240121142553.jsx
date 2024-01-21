@@ -36,9 +36,7 @@ function App() {
 
     {loading ? (
       <Loading/>
-    ) : (
-
-  
+    ) }
     <Routes>
    
    <Route path='/' 
@@ -60,7 +58,6 @@ function App() {
 
 
  </Routes>
-   )}
      
     </>
   )
