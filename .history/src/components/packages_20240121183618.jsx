@@ -131,7 +131,7 @@ const Packages = () => {
                        
   
                     </p>
-                    <Link to='/portfolio'>
+                    <Link to='/about-company'>
 
                   
                     <button className='button'>

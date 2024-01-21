@@ -131,13 +131,12 @@ const Packages = () => {
                        
   
                     </p>
-                    <Link to='/portfolio'>
-
-                  
+                    <Link to='about-company'>
+                        
+                    </Link>
                     <button className='button'>
                         Click Here
                         </button>
-                        </Link>
                 </div>
 
                 

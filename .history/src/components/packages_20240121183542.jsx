@@ -4,7 +4,7 @@ import Footer from './footer'
 
 import Navbar from './navbar'
 import Booking from './booking'
-import { Link } from 'react-router-dom'
+import Link
 
 const Packages = () => {
 
@@ -131,13 +131,9 @@ const Packages = () => {
                        
   
                     </p>
-                    <Link to='/portfolio'>
-
-                  
                     <button className='button'>
                         Click Here
                         </button>
-                        </Link>
                 </div>
 
                 
