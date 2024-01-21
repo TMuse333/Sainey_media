@@ -1,0 +1,9 @@
+.overview2-container{
+    height:1000px;
+    background-image: url(src/media/sainey22.JPG);
+    background-repeat: no-repeat;
+    width:100vw;
+background-size: cover;
+background-position: 50% 100%;
+
+}

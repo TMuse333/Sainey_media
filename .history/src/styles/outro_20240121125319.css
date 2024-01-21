@@ -1,0 +1,72 @@
+.outro-container{
+    width: 100vw;
+    
+ display: flex;
+
+ align-items: center;
+ justify-content: center;
+
+ background: radial-gradient(circle at center, #e5c06f, #776237);
+ position: relative;
+ /* border:2px solid white; */
+/* margin-bottom: 5rem;
+margin-top: 6rem; */
+margin-top:-12rem;
+background: radial-gradient(circle at center, rgba(229, 192, 111, 0.5), rgba(119, 98, 55, 0.5));
+
+
+
+}
+
+.outro-contents{
+    margin:auto;
+}
+
+
+
+.outro-contents p{
+    width:80vw;
+    margin:auto;
+    max-width: 1000px;
+    background-color: #BE9F5B;
+    padding:1rem;
+    border-radius:1rem;
+}
+
+@media screen and (min-width:655px) {
+    .outro-contents h2{
+        font-size: 3rem;
+    }
+
+    .outro-container{
+        margin-top: 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+@media screen and (min-width: 865px){
+ 
+
+
+
+    
+
+    
+}

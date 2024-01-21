@@ -1,0 +1,50 @@
+.portfolio-container{
+    background-color: #BE9F5B;
+    width:100vw;
+
+
+    position: relative;
+    z-index: 0;
+    margin-bottom: -1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-text-box{
+    display: flex;
+    flex-direction: column;
+    height:max-content
+}
+
+.text-box{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-width:865px){
+    .video-text-box{
+        flex-direction: row;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .portfolio{
+        margin-top: ;
+    }
+
+    .text-box{
+        margin-left: -3rem;
+    }
+
+    #portfolio{
+        margin-bottom: 3rem;
+    }
+
+
+}
