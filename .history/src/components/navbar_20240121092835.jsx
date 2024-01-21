@@ -72,8 +72,6 @@ overflowY:'hidden',
 width: isMobile ?'80px':'auto',
 backgroundImage: isMobile ? 'linear-gradient(to right, #6c5933, #be9f5b, #6c5933)' : null,
 transition: isMobile? 'height 0.3s ease-in' : null,
-marginTop: isMobile ? '1rem' : null,
-borderRadius:'10px'
 
   
  
