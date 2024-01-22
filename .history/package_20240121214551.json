@@ -25,7 +25,7 @@
 
     "router-dom": "^2.2.11",
     "slick-carousel": "^1.8.1",
-    "tsparticles": "^3.1.0"
+    "tsparticles": "^3.1.0",
 
   },
   "devDependencies": {
