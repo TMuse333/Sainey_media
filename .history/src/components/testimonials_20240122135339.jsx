@@ -63,7 +63,6 @@ const Testimonials = () => {
         setIsAnimated(true);
         setTimeout(() => {
           setIsMuted(false);
-          console.log('is muted?',isMuted)
         }, 200);
       }
     };
@@ -111,7 +110,7 @@ const Testimonials = () => {
     transitionDelay: isAnimated ? '2.5s' : '0s',
   };
 
-
+  
 
 
   useEffect(() => {
@@ -152,8 +151,7 @@ const Testimonials = () => {
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
                loading='lazy' controls 
-              //  autoPlay={isAnimated} muted={isMuted} 
-
+               autoplay={isAnimated} muted={isMuted} 
                className='testimonial-video'>
                 <source src={video.src} />
               </video>

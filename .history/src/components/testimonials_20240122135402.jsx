@@ -63,7 +63,7 @@ const Testimonials = () => {
         setIsAnimated(true);
         setTimeout(() => {
           setIsMuted(false);
-          console.log('is muted?',isMuted)
+          console.log(isM)
         }, 200);
       }
     };
@@ -152,7 +152,7 @@ const Testimonials = () => {
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
                loading='lazy' controls 
-              //  autoPlay={isAnimated} muted={isMuted} 
+               autoplay={isAnimated} muted={isMuted} 
 
                className='testimonial-video'>
                 <source src={video.src} />

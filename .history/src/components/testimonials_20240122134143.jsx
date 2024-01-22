@@ -34,7 +34,6 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
-  const [isMuted, setIsMuted] = useState(true)
 
   const contentRef = useRef();
 
@@ -61,10 +60,6 @@ const Testimonials = () => {
 
       if (elementTop < window.innerHeight - offset && elementBottom > offset && !isAnimated) {
         setIsAnimated(true);
-        setTimeout(() => {
-          setIsMuted(false);
-          console.log('is muted?',isMuted)
-        }, 200);
       }
     };
 
@@ -112,8 +107,6 @@ const Testimonials = () => {
   };
 
 
-
-
   useEffect(() => {
     if (isAnimated) {
       // Trigger video play when isAnimated is true
@@ -139,7 +132,6 @@ const Testimonials = () => {
       <Carousel
         // style={carouselStyle}
         interval={null}
-        pause={false}
         activeIndex={currentIndex}
         onSelect={(index, e) => {
           e.preventDefault();
@@ -151,10 +143,7 @@ const Testimonials = () => {
           <Carousel.Item key={video.id}>
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
-               loading='lazy' controls 
-              //  autoPlay={isAnimated} muted={isMuted} 
-
-               className='testimonial-video'>
+               loading='lazy' controls autoplay  className='testimonial-video'>
                 <source src={video.src} />
               </video>
             )}

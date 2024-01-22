@@ -12,16 +12,6 @@ import Hero2 from "./hero2";
 import Paragraph from "./paragraph";
 const Layout2 = () => {
 
-    useEffect(() => {
-        // Scroll to the top of the window when the component mounts
-        window.scrollTo(0, 0);
-    
-        // If you're using a functional component, you may want to return a cleanup function
-        return () => {
-          // Any cleanup logic can go here
-        };
-      }, []);
-
     const links = [
         {
         dest:'about-ceo',

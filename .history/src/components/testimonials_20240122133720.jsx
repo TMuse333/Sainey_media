@@ -34,7 +34,6 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
-  const [isMuted, setIsMuted] = useState(true)
 
   const contentRef = useRef();
 
@@ -61,10 +60,6 @@ const Testimonials = () => {
 
       if (elementTop < window.innerHeight - offset && elementBottom > offset && !isAnimated) {
         setIsAnimated(true);
-        setTimeout(() => {
-          setIsMuted(false);
-          console.log('is muted?',isMuted)
-        }, 200);
       }
     };
 
@@ -76,20 +71,15 @@ const Testimonials = () => {
   }, [isAnimated]);
 
   useEffect(() => {
-    if (isAnimated) {
-      // Delay the video play by 2000 milliseconds (2 seconds)
-      const delay = 5000;
-      const video = document.getElementById(`video-${currentIndex}`);
-  
-      if (video) {
-        const playVideo = () => video.play();
-        const timeoutId = setTimeout(playVideo, delay);
-  
-        // Cleanup function to clear the timeout if the component unmounts
-        return () => clearTimeout(timeoutId);
-      }
+    // Check if animations have already played
+    const animationsPlayed = localStorage.getItem('animationsPlayed');
+
+    if (!animationsPlayed) {
+      setIsAnimated(true);
+      // Mark animations as played in local storage
+      localStorage.setItem('animationsPlayed', 'true');
     }
-  }, [isAnimated, currentIndex]);
+  }, []);
 
   const handleSlide = (index) => {
     setCurrentIndex(index);
@@ -110,8 +100,6 @@ const Testimonials = () => {
     transition: 'opacity 0.3s ease-in',
     transitionDelay: isAnimated ? '2.5s' : '0s',
   };
-
-
 
 
   useEffect(() => {
@@ -137,9 +125,8 @@ const Testimonials = () => {
       </div>
 
       <Carousel
-        // style={carouselStyle}
+        style={carouselStyle}
         interval={null}
-        pause={false}
         activeIndex={currentIndex}
         onSelect={(index, e) => {
           e.preventDefault();
@@ -151,10 +138,7 @@ const Testimonials = () => {
           <Carousel.Item key={video.id}>
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
-               loading='lazy' controls 
-              //  autoPlay={isAnimated} muted={isMuted} 
-
-               className='testimonial-video'>
+               loading='lazy' controls autoplay muted className='testimonial-video'>
                 <source src={video.src} />
               </video>
             )}

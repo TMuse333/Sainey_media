@@ -62,7 +62,7 @@ const Testimonials = () => {
       if (elementTop < window.innerHeight - offset && elementBottom > offset && !isAnimated) {
         setIsAnimated(true);
         setTimeout(() => {
-          setIsMuted(false);
+          // setIsMuted(false);
           console.log('is muted?',isMuted)
         }, 200);
       }
@@ -152,7 +152,7 @@ const Testimonials = () => {
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
                loading='lazy' controls 
-              //  autoPlay={isAnimated} muted={isMuted} 
+               autoPlay={isAnimated} muted={true} 
 
                className='testimonial-video'>
                 <source src={video.src} />

@@ -31,7 +31,7 @@ const Paragraph = () => {
     
         
             setTiltAngle(newTiltAngle);
- 
+            console.log(bottomThirdInView)
     
             const offset = 350;
     
