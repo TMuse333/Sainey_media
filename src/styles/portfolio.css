@@ -26,6 +26,12 @@
     margin-right: auto;
 }
 
+@media screen and (min-width:655px){
+    .portfolio-container{
+        /* margin-bottom: 3rem; */
+        padding-bottom: 10rem;
+    }
+}
 
 @media screen and (min-width:865px){
     .video-text-box{

@@ -122,6 +122,25 @@ transform: translateX(-50%);
   
 }
 
+.testimonial-container .carousel{
+  margin-left: auto;
+  margin-right: auto;
+  width:100vw;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: -3rem; */
+  /* width:10vw; */
+}
+
+.carousel-inner{
+  width:100vw;
+  margin-right: 2rem;
+}
+
 .testimonial-video{
   width:90vw;
   max-width: 760px;
