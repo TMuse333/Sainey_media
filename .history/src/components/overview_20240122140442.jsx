@@ -13,16 +13,6 @@ import sainey from '../media/sainey22-min.jpg'
 
 const Overview = () => {
 
-    useEffect(() => {
-        // Scroll to the top of the window when the component mounts
-        window.scrollTo(0, 0);
-    
-        // If you're using a functional component, you may want to return a cleanup function
-        return () => {
-          // Any cleanup logic can go here
-        };
-      }, []);
-
     const links = [
         {
         dest:'/',

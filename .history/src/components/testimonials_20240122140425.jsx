@@ -152,8 +152,7 @@ const Testimonials = () => {
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
                loading='lazy' controls 
-               autoPlay={false} 
-              //  muted={isMuted} 
+               autoPlay={false} muted={isMuted} 
 
                className='testimonial-video'>
                 <source src={video.src} />

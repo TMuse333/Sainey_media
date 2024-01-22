@@ -139,7 +139,7 @@ const Testimonials = () => {
       <Carousel
         // style={carouselStyle}
         interval={null}
-        pause={true}
+        pause={false}
         activeIndex={currentIndex}
         onSelect={(index, e) => {
           e.preventDefault();
@@ -152,8 +152,7 @@ const Testimonials = () => {
             {currentIndex === index && (
               <video   id={`video-${currentIndex}`}
                loading='lazy' controls 
-               autoPlay={false} 
-              //  muted={isMuted} 
+               autoPlay={false} muted={isMuted} 
 
                className='testimonial-video'>
                 <source src={video.src} />
