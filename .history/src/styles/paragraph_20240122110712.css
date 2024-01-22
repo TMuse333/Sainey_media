@@ -1,0 +1,20 @@
+.paragraph-container{
+    margin-top: 2rem;
+    width:100vw;
+    background: radial-gradient(circle at center, rgba(229, 192, 111), rgba(119, 98, 55));
+    position: relative;
+}
+
+.paragraph-container .description-text{
+    padding:3rem 2rem 2rem 2rem;
+    margin: auto;
+    max-width: 1000px;
+    
+}
+
+@media screen and (min-width:655px){
+    .paragraph-container .description-text{
+       font-size: 1.5rem;
+
+    }
+}
