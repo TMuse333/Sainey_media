@@ -18,11 +18,11 @@ const Testimonials = () => {
     },
     {
       id: 1,
-      src: video4
+      src: video2
     },
     {
       id: 2,
-      src: video2
+      src: video3
     },
     {
       id: 3,

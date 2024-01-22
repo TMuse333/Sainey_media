@@ -22,7 +22,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      src: video2
+      src: video3
     },
     {
       id: 3,
