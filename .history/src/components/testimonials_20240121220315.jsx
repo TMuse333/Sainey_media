@@ -142,8 +142,6 @@ const carouselStyle = {
 style={{height:'300px'}}
 >
   <source src={homepageVideos[0]}
-  type='video/mp4'
-  />
 </video>
 
       {/* <Carousel 
