@@ -140,7 +140,7 @@ const carouselStyle = {
 
 <video loading='lazy'
 style={{height:'300px',
-position:'relative'}}
+position}}
 >
   <source src={homepageVideos[0]}
   type='video/mp4'
