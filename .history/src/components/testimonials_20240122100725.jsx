@@ -10,7 +10,14 @@ import video2 from '../media/testimonial2.mp4'
 
 const Testimonials = () => {
 
-
+//   const homepageVideos = [
+//     '../media/Sainey-Media-1.mp4',
+//     '../media/testimonial2.mp4'
+// ]
+  // const videos = homepageVideos.map((src, index) => ({
+  //   id: index + 1,
+  //   src: src
+  // }));
 
   const videos = [
     {

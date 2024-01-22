@@ -15,7 +15,7 @@ function App() {
     // Simulate loading delay (replace with actual loading logic)
     const loadingTimeout = setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 2000);
 
     // Cleanup function
     return () => clearTimeout(loadingTimeout);
@@ -29,7 +29,7 @@ function App() {
    
           <Routes>
             <Route path="/" element={<Layout2 />} />
-            <Route path="about-ceo" element={<Overview />} />
+            {/* <Route path="about-ceo" element={<Overview />} /> */}
             <Route path="about-company" element={<Packages />} />
             <Route path="portfolio" element={<Portfolio />} />
           </Routes>

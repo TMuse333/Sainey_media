@@ -4,26 +4,19 @@ import ReactPlayer from 'react-player';
 
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { homepageVideos } from '../componentData/data';
-import video1 from  '../media/Sainey-Media-1.mp4'
-import video2 from '../media/testimonial2.mp4'
+import { homepageVideos } from '../componentData/data';
+
 
 const Testimonials = () => {
+  const videos = homepageVideos.map((src, index) => ({
+    id: index + 1,
+    src: src
+  }));
 
-
-
-  const videos = [
-    {
-      id:0,
-      src:video1
-    },
-    {
-      id:1,
-      src:video2
-    }
-  ]
-
-console.log(videos)
+  const homepageVideos = [
+    '../media/Sainey-Media-1.mp4',
+    '../media/testimonial2.mp4'
+]
 
 
 
@@ -169,11 +162,13 @@ const carouselStyle = {
       {videos.map((video, index) => (
         <Carousel.Item key={video.id}>
           {currentIndex === index && (
-           <video loading='lazy' controls
-           className='testimonial-video'
-           >
-            <source src={video.src}/>
-           </video>
+            <ReactPlayer
+              url={video.src}
+              playing={true}  // You can use state to control playback if needed
+              controls={true}
+              width="100%"     // Adjust the width as needed
+              height={isMobile ? '25rem' : '30rem'}    // Adjust the height as needed
+            />
           )}
         </Carousel.Item>
       ))}

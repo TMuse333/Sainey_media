@@ -7,14 +7,14 @@ import { Carousel } from 'react-bootstrap';
 import {portfolioVideos} from '../componentData/data'
 import vid from '../media/cheat-curls.mp4'
 import big from '../media/testimonial2-big.mp4'
- import video1 from '../media/cheat-curls.mp4'
- import video2 from   '../media/sabotage.mp4'
- import video3 from  '../media/muscles.mp4'
- import video4 from  '../media/ice-cream.mp4'
- import video5 from  '../media/felecia-catcrow.mp4'
- import video6 from  '../media/eat-healthy.mp4'
- import video7 from  '../media/busy-guy.mp4'
- import video8 from  '../media/4plates.mp4'
+'src/media/cheat-curls.mp4',
+    'src/media/sabotage.mp4',
+    'src/media/muscles.mp4',
+    'src/media/ice-cream.mp4',
+    'src/media/felecia-catcrow.mp4',
+    'src/media/eat-healthy.mp4',
+    'src/media/busy-guy.mp4',
+    'src/media/4plates.mp4',
 
 const Portfolio = () => {
 
@@ -35,42 +35,6 @@ const Portfolio = () => {
             name:'About CEO'
         },
         
-    ]
-
-
-    const videos = [
-      {
-        id:0,
-        src:video1
-      },
-      {
-        id:1,
-        src:video2
-      },
-      {
-        id:2,
-        src:video3
-      },
-      {
-        id:3,
-        src:video4
-      },
-      {
-        id:4,
-        src:video5
-      },
-      {
-        id:5,
-        src:video6
-      },
-      {
-        id:6,
-        src:video7
-      },
-      {
-        id:7,
-        src:video8
-      },
     ]
 
     const [isMobile, setIsMobile] = useState(true);
@@ -142,14 +106,16 @@ const Portfolio = () => {
       }}
       wrap={true}
     >
-      {videos.map((video, index) => (
+      {portfolioVideos.map((video, index) => (
         <Carousel.Item key={video.id}>
           {currentIndex === index && (
-            <video loading='lazy' controls
-            className='testimonial-video'
-            >
-             <source src={video.src}/>
-            </video>
+            <ReactPlayer
+              url={video}
+              playing={true}  // You can use state to control playback if needed
+              controls={true}
+              width="100%"     // Adjust the width as needed
+              height={isMobile ? '25rem' : '30rem'}    // Adjust the height as needed
+            />
           )}
         </Carousel.Item>
       ))}

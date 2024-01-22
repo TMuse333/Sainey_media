@@ -145,11 +145,13 @@ const Portfolio = () => {
       {videos.map((video, index) => (
         <Carousel.Item key={video.id}>
           {currentIndex === index && (
-            <video loading='lazy' controls
-            className='testimonial-video'
-            >
-             <source src={video.src}/>
-            </video>
+            <ReactPlayer
+              url={video}
+              playing={true}  // You can use state to control playback if needed
+              controls={true}
+              width="100%"     // Adjust the width as needed
+              height={isMobile ? '25rem' : '30rem'}    // Adjust the height as needed
+            />
           )}
         </Carousel.Item>
       ))}

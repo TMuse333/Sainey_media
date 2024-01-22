@@ -1,29 +1,23 @@
 import React, { useState,useRef,useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
+
 
 import '../styles/testimonials.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { homepageVideos } from '../componentData/data';
-import video1 from  '../media/Sainey-Media-1.mp4'
-import video2 from '../media/testimonial2.mp4'
+import { ERR_INVALID_HEX } from 'web3';
+
+
 
 const Testimonials = () => {
 
+   const homepageVideos = [
+    '../media/Sainey-Media-1.mp4',
+    '../media/testimonial2.mp4'
+]
+
+  
 
 
-  const videos = [
-    {
-      id:0,
-      src:video1
-    },
-    {
-      id:1,
-      src:video2
-    }
-  ]
-
-console.log(videos)
 
 
 
@@ -49,7 +43,7 @@ console.log(videos)
   }, []); 
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const handleSlide = (index) => {
    
@@ -113,8 +107,6 @@ const carouselStyle = {
   opacity: isAnimated ? 1 : 0,
   transition: 'opacity 0.3s ease-in',
   transitionDelay: isAnimated ? '2.5s' : '0s', // Add a 2.5s delay when isAnimated is true
-  // marginLeft:'auto',
-  // marginRight:'auto'
 };
 
 
@@ -135,8 +127,6 @@ const carouselStyle = {
      >
       Testimonials
     </h1>
-
-
     <div className='blocker'
     style={style}>
 
@@ -146,8 +136,6 @@ const carouselStyle = {
 
     </p>
 
-
-
   
   </div>
 
@@ -156,28 +144,31 @@ const carouselStyle = {
 
 
 
-  <Carousel 
+
+      <Carousel 
       style={carouselStyle}
-      interval={null} 
-      activeIndex={currentIndex}
-      onSelect={(index, e) => {
-        e.preventDefault();
-        handleSlide(index);
-      }}
-      wrap={true}
-    >
-      {videos.map((video, index) => (
-        <Carousel.Item key={video.id}>
-          {currentIndex === index && (
-           <video loading='lazy' controls
-           className='testimonial-video'
-           >
-            <source src={video.src}/>
-           </video>
-          )}
-        </Carousel.Item>
-      ))}
-    </Carousel>
+       interval={null} activeIndex={currentIndex}
+     
+        onSelect={(index, e) => {
+          e.preventDefault(); // Prevent the default action
+          handleSlide(index);
+        }}
+      
+      wrap={true}>
+        {homepageVideos.map((video, index) => (
+          <Carousel.Item key={index}>
+            {currentIndex === index && ( // Render the ReactPlayer only for the current index
+              <video className='testimonial-video'
+              id='main-testimonial'
+             
+                controls
+                loading='lazy'>
+                <source src={video} type="video/mp4"/>
+              </video>
+            )}
+          </Carousel.Item>
+        ))}
+      </Carousel>
 
 
       </div>
