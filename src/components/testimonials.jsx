@@ -156,7 +156,7 @@ const carouselStyle = {
             {currentIndex === index && ( // Render the ReactPlayer only for the current index
               <video className='testimonial-video'
               id='main-testimonial'
-             
+             loading='lazy'
                 controls
               >
                 <source src={video.src} type="video/mp4"/>

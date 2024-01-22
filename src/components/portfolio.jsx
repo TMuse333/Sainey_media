@@ -81,7 +81,7 @@ const Portfolio = () => {
           <Carousel.Item key={index}>
             {currentIndex === index && ( // Render the ReactPlayer only for the current index
               <video className='testimonial-video'
-             
+              loading='lazy'
              
                 controls>
                 <source src={video} type="video/mp4"/>
