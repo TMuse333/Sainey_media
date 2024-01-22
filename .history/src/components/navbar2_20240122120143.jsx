@@ -98,7 +98,7 @@ const Navbar2 = () => {
                 className='nav-link'>
 
    
-                <span>About CEO</span>
+                <span>Services</span>
                 </Link>
                 
               

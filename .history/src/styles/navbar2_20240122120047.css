@@ -148,12 +148,11 @@ margin-top: -2.75rem;
 
     .desktop span {
         color:white;
-        font-size: 1.4rem;
     }
 
     .desktop{
         position:absolute;
-    
+      font-size: 1.6rem;
         top:50%;
         display: flex;
         width:15rem;

@@ -29,7 +29,7 @@ const Packages = () => {
         },
         {
             dest:'/portfolio',
-            name:'Portfolio'
+            name:'Our work'
         },
         
     ]

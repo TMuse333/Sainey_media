@@ -20,11 +20,11 @@ const Overview = () => {
         },
         {
             dest:'/about-company',
-            name:'Services'
+            name:'Services
         },
         {
             dest:'/portfolio',
-            name:'Portfolio'
+            name:'Our work'
         },
         
     ]

@@ -24,7 +24,7 @@ const Overview = () => {
         },
         {
             dest:'/portfolio',
-            name:'Portfolio'
+            name:'Our work'
         },
         
     ]
