@@ -36,8 +36,8 @@ const Layout2 = () => {
             name:'Our Work'
         },
         {
-        dest:'contact',
-        name:'Contact'
+        dest:'b',
+        name:'Our Work'
     }
         
     ]

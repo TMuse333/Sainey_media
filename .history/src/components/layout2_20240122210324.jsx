@@ -37,7 +37,7 @@ const Layout2 = () => {
         },
         {
         dest:'contact',
-        name:'Contact'
+        name:'Our Work'
     }
         
     ]
