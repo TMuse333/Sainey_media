@@ -143,7 +143,6 @@ max-width: 500px;
         flex-direction: column;
        
         align-items: center;
-        /* margin-left: 5rem; */
   
     }
 
@@ -156,7 +155,7 @@ max-width: 500px;
       
         
         
-        margin-right: 10rem;
+        /* margin-right: 5rem; */
     }
 
     .big img{
@@ -214,11 +213,5 @@ max-width: 500px;
 
     .pad3{
         padding-left: 3rem;
-    }
-}
-
-@media screen and (min-width:1150px){
-    .media-container{
-        margin-right: 18rem;
     }
 }

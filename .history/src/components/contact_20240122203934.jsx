@@ -62,7 +62,7 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
   useEffect(() =>{
     window.scrollTo(0,0)
-    // setSubmitted(false)
+    setSubmitted(false)
   })
 
   return (

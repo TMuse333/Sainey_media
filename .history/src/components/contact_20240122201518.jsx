@@ -2,7 +2,7 @@ import React, { useState, useRef,useEffect } from 'react';
 import '../styles/contact.css';
 import emailjs from '@emailjs/browser';
 import Navbar from './navbar';
-import { Link } from 'react-router-dom';
+import Link
 
 import Footer from './footer';
 import nobg from '../media/no-bg-sainey-logo.png'
@@ -30,17 +30,15 @@ const Contact = () => {
         
     ]
 
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
   const form = useRef();
-
-  const serviceId = 'service_32u1f5x';
-const templateId = 'template_ugyenks';
-const userId = 'CN_-9JmkFRgjxgmrg';
 
   const sendEmail = (e) => {
     e.preventDefault();
 
- 
+    const serviceId = 'service_32u1f5x';
+    const templateId = 'template_ugyenks';
+    const userId = 'CN_-9JmkFRgjxgmrg';
 
     emailjs
       .sendForm(serviceId, templateId, form.current, userId)
@@ -62,7 +60,6 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
   useEffect(() =>{
     window.scrollTo(0,0)
-    // setSubmitted(false)
   })
 
   return (
@@ -90,23 +87,16 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
         <div className='le-box'>
 
-{!submitted ? (
-      <p className='correct'>
-      You have made an <span className='bold-700'>excellent </span> choice 
-    </p>
-) : null}
 
-
+        <p className='correct'>
+          You have made an <span className='bold-700'>excellent </span> choice 
+        </p>
       <h1 className='title-text booking-title'>
       
       </h1>
       {submitted ? (
         <div style={{
-            height:'55vh',
-            display:'flex',
-            flexDirection:'column',
-            alignItems:'center',
-            justifyContent:'center'
+            height:'100vh'
         }}>
         <p className='description-text'>
           Thank you for your service! We'll get in touch with you shortly.
@@ -126,16 +116,16 @@ const userId = 'CN_-9JmkFRgjxgmrg';
           </p>
           <form onSubmit={sendEmail} ref={form}>
             <div className='info-box-container'>
-              <input type='email' placeholder='Email' name='email' />
-              <input type='text' placeholder='First Name' name='firstName' />
-              <input type='text' placeholder='Last Name' name='lastName' />
+              <input type='email' placeholder='Email' name='user_email' />
+              <input type='text' placeholder='First Name' name='first_Name' />
+              <input type='text' placeholder='Last Name' name='last_Name' />
               <input
                 type='text'
                 placeholder='Company name (if applicable)'
-                name='companyName'
+                name='company_Name'
               />
             
-              <input type='text' placeholder='Project details' name='projectDetails' />
+              <input type='text' placeholder='Project details' name='project_Details' />
             </div>
 
             {/* <p className='description-text pad3'>
@@ -156,28 +146,22 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
 </div>
 
-<div className='big'
-
->
-   {!submitted ? (
-  <div
+<div className='big'>
    
-  className='media-container'>
- <img src={nobg}
+    <div className='media-container'>
+    <img src={nobg}
 className='contact-logo'
 />
 
 <h2 className='title-text'>
- Sainey Media
+    Sainey Media
 </h2>
 
 <p className='description-text'>
 Transforming Brands, One Post at a Time.
 </p>
 
- </div>
-   ) : null}
-  
+    </div>
 
 
 

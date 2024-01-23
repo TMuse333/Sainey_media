@@ -81,9 +81,7 @@ export const portfolioVideos = [
 
 ]
 
-const serviceId = 'service_32u1f5x';
-const templateId = 'template_ugyenks';
-const userId = 'CN_-9JmkFRgjxgmrg';
+
 
 // export const homepageVideos = [
 //     'src/media/Sainey-Media-1.mp4',

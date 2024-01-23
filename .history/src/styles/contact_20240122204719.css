@@ -217,7 +217,7 @@ max-width: 500px;
     }
 }
 
-@media screen and (min-width:1150px){
+@media screen and (min-width:1100px){
     .media-container{
         margin-right: 18rem;
     }

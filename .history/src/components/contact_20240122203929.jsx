@@ -62,7 +62,7 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
   useEffect(() =>{
     window.scrollTo(0,0)
-    // setSubmitted(false)
+    setSubmitted(false)
   })
 
   return (
@@ -160,23 +160,8 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
 >
    {!submitted ? (
-  <div
-   
-  className='media-container'>
- <img src={nobg}
-className='contact-logo'
-/>
 
-<h2 className='title-text'>
- Sainey Media
-</h2>
-
-<p className='description-text'>
-Transforming Brands, One Post at a Time.
-</p>
-
- </div>
-   ) : null}
+   )}
   
 
 

@@ -62,7 +62,6 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
   useEffect(() =>{
     window.scrollTo(0,0)
-    // setSubmitted(false)
   })
 
   return (
@@ -90,19 +89,17 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 
         <div className='le-box'>
 
-{!submitted ? (
-      <p className='correct'>
-      You have made an <span className='bold-700'>excellent </span> choice 
-    </p>
-) : null}
 
+        {!submitted ? (<p className='correct'>
+          You have made an <span className='bold-700'>excellent </span> choice 
+        </p>
 
       <h1 className='title-text booking-title'>
       
       </h1>
       {submitted ? (
         <div style={{
-            height:'55vh',
+            height:'50vh',
             display:'flex',
             flexDirection:'column',
             alignItems:'center',
@@ -157,27 +154,26 @@ const userId = 'CN_-9JmkFRgjxgmrg';
 </div>
 
 <div className='big'
-
->
-   {!submitted ? (
-  <div
+ style={{
+  display:submitted ? 'none' : 'flex'
+}}>
    
-  className='media-container'>
- <img src={nobg}
+    <div
+   
+     className='media-container'>
+    <img src={nobg}
 className='contact-logo'
 />
 
 <h2 className='title-text'>
- Sainey Media
+    Sainey Media
 </h2>
 
 <p className='description-text'>
 Transforming Brands, One Post at a Time.
 </p>
 
- </div>
-   ) : null}
-  
+    </div>
 
 
 
