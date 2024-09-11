@@ -41,7 +41,7 @@ const Footer = ({links,gradientBackground}) => {
           2024 Sainey Media
         </p>
         <a className='link' href='https://www.focusflowsoftware.com' target='_blank' rel='noopener noreferrer'>
-  <p style={{ color: '#BE9F5B' }}>Website Created by FocusFlow Software</p>
+  <p style={{ color: '#BE9F5B' }}>Created by FocusFlow Software</p>
 </a>
    
        
